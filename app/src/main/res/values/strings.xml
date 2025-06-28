@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RockitCutitUI</string>
+    <string name="btn_cpu_text">PLAY\n<b>CPU</b></string>
+    <string name="btn_multi_text">PLAY\n<b>MULTIPLAYER</b></string>
+</resources>
