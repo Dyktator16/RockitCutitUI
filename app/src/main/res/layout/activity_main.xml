@@ -139,7 +139,7 @@
                 android:textSize="14sp"
                 android:textStyle="bold" />
         </LinearLayout>
-
+        <!-- jebac -->
         <!-- Przycisk Multiplayer -->
         <LinearLayout
             android:layout_width="150dp"
