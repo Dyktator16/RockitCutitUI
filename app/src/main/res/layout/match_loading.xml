@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_stadium_background"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!-- Ikona ładowania -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="loading_match"
+        android:background="@drawable/loading_animation" />
+
+    <TextView
+        android:id="@+id/waiting_text_view_animated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Waiting for opponents"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="10"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

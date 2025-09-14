@@ -110,7 +110,7 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:background="@drawable/button_play_cpu"
+            android:background="@drawable/button_menu_cpu"
             android:gravity="center"
             android:orientation="vertical"
             android:padding="10dp">
@@ -144,7 +144,7 @@
         <LinearLayout
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_play_multi"
+            android:background="@drawable/button_multiplayer"
             android:gravity="center"
             android:orientation="vertical"
             android:padding="10dp">
@@ -179,10 +179,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="90dp"
-        android:background="@drawable/tab_bar_clear"
+        android:layout_gravity="bottom"
+        android:background="@drawable/rounded_container"
         android:gravity="center"
-        android:orientation="horizontal"
-        android:layout_marginTop="100dp">
+        android:orientation="horizontal">
 
         <!-- Trofea -->
         <ImageButton
@@ -212,7 +212,7 @@
                 android:layout_width="120dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
-                android:src="@drawable/podswietlenie_200"
+                android:src="@drawable/podswietlenie_menu_belka"
                 android:visibility="visible" />
 
             <!-- Ikona + napis -->
@@ -220,8 +220,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:orientation="vertical"
-                android:gravity="center_horizontal">
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
 
                 <ImageButton
                     android:layout_width="60dp"
@@ -234,10 +234,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
                     android:text="Play"
                     android:textColor="#FFFFFF"
                     android:textSize="14sp"
-                    android:layout_marginTop="2dp"
                     android:textStyle="bold" />
             </LinearLayout>
         </FrameLayout>

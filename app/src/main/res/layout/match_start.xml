@@ -1,0 +1,82 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Widok z kamery na pełnym ekranie -->
+    <androidx.camera.view.PreviewView
+        android:id="@+id/camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Nowy prostokąt w lewym górnym rogu ekranu -->
+    <RelativeLayout
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_gravity="start|top"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="0dp"
+        android:background="@drawable/boczna_zakladka_pod_nick_od_lewej"
+        android:clipToOutline="true" />
+
+    <!-- Nowy prostokąt w prawym górnym rogu ekranu -->
+    <RelativeLayout
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_gravity="end|top"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/boczna_zakladka_pod_nick_od_prawej"
+        android:clipToOutline="true" />
+
+    <!-- Dolny kontener jako overlay -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/rounded_container"
+        android:orientation="vertical"
+        android:paddingTop="0dp"
+        android:paddingBottom="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <!-- Kontener na dwa małe prostokąty -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <!-- Lewy prostokąt -->
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/ciemny_pod_nick" />
+
+            <!-- Przestrzeń między prostokątami -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+
+            <!-- Prawy prostokąt -->
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/ciemny_pod_nick" />
+
+        </LinearLayout>
+
+        <!-- Trzeci prostokąt wyśrodkowany pod dwoma powyżej -->
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginTop="120dp"
+            android:layout_marginBottom="0dp"
+        android:background="@drawable/ciemny_pod_historie_rozgrywki" />
+
+    </LinearLayout>
+
+</FrameLayout>
